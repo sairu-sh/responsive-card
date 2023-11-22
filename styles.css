@@ -1,0 +1,163 @@
+@font-face {
+  font-family: roboto;
+  src: url(Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: libre_baskerville;
+  src: url(Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+p,
+h1 {
+  color: white;
+}
+
+.texts h1,
+p {
+  font-family: libre_baskerville;
+  margin-bottom: 0;
+}
+
+.plant img,
+.seating img {
+  width: 71.68vw;
+}
+
+.plant img {
+  margin-top: 8.07vh;
+  height: 49.77vh;
+}
+
+.seating img {
+  margin-top: 40px;
+  height: 37.75vh;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 104px;
+}
+
+.texts h1 {
+  width: 417px;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.texts p {
+  width: 401px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+button {
+  background: transparent;
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 14px;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  letter-spacing: 2.1px;
+  width: 200px;
+  margin-top: 32px;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+.main-body {
+  background-color: #343d33;
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-accent {
+  width: 38.14vw;
+  height: 64.85vh;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+@media screen and (min-width: 1025px) {
+  .texts {
+    position: absolute;
+    top: 113px;
+    left: 57.28vw;
+  }
+
+  .plant img {
+    width: 38.14vw;
+    height: 354px;
+    margin-top: 15.98vh;
+    margin-left: 11.65vw;
+  }
+
+  .seating img {
+    width: 74.28vw;
+    height: 409px;
+    margin: 80px 0 96px 179px;
+  }
+
+  .plant-accent {
+    position: absolute;
+    top: 45.96vh;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .plant img {
+    width: 85.49vw;
+    height: 52vh;
+    margin-top: 10.98vh;
+  }
+
+  .seating img {
+    width: 85.49vw;
+    height: 30vh;
+    margin-top: 16px;
+  }
+
+  .main-body,
+  .texts {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texts h1 {
+    text-align: center;
+  }
+
+  .texts p {
+    text-align: center;
+  }
+
+  .plant-accent {
+    width: 38.14vw;
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  .main-body {
+    justify-content: center;
+    align-items: center;
+  }
+}
